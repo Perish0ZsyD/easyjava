@@ -11,7 +11,7 @@ public class FieldInfo {
     /**
      * 字段名称
      */
-    private String FieldName;
+    private String fieldName;
 
     /**
      * bean属性名称
@@ -39,11 +39,11 @@ public class FieldInfo {
     private Boolean isAutoIncrement;
 
     public String getFieldName() {
-        return FieldName;
+        return fieldName;
     }
 
     public void setFieldName(String fieldName) {
-        FieldName = fieldName;
+        fieldName = fieldName;
     }
 
     public String getPropertyName() {

@@ -41,6 +41,27 @@ public class TableInfo {
     List<FieldInfo> fieldList;
 
     /**
+     * 扩展字段信息
+     */
+    private List<FieldInfo> fieldExtendList;
+
+    public List<FieldInfo> getFieldExtendList() {
+        return fieldExtendList;
+    }
+
+    public void setFieldExtendList(List<FieldInfo> fieldExtendList) {
+        this.fieldExtendList = fieldExtendList;
+    }
+
+    public Boolean getHaveDatetime() {
+        return haveDatetime;
+    }
+
+    public void setHaveDatetime(Boolean haveDatetime) {
+        this.haveDatetime = haveDatetime;
+    }
+
+    /**
      * 唯一索引集合
      * 使用LinkedHashMap保证顺序
      */
@@ -117,11 +138,11 @@ public class TableInfo {
         this.haveDate = haveDate;
     }
 
-    public Boolean getHaveDatetime() {
+    public Boolean getHaveDateTime() {
         return haveDatetime;
     }
 
-    public void setHaveDatetime(Boolean haveDatetime) {
+    public void setHaveDateTime(Boolean haveDatetime) {
         this.haveDatetime = haveDatetime;
     }
 

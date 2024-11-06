@@ -19,6 +19,7 @@ import java.util.Map;
  * @Version 1.0
  */
 public class BuildService {
+
     private static final Logger logger = LoggerFactory.getLogger(BuildService.class);
 
     public static void execute(TableInfo tableInfo) {
@@ -29,16 +30,20 @@ public class BuildService {
 
         String className = tableInfo.getBeanName() + "Service";
         File poFile = new File(folder, className + ".java");
+        OutputStream out = null;
+        OutputStreamWriter outWriter = null;
+        BufferedWriter bw = null;
+        try {
+            out = new FileOutputStream(poFile);
+            outWriter = new OutputStreamWriter(out, "utf8");
+            bw = new BufferedWriter(outWriter);
 
-        try (OutputStream out = new FileOutputStream(poFile);
-             OutputStreamWriter outWriter = new OutputStreamWriter(out, "utf8");
-             BufferedWriter bw = new BufferedWriter(outWriter)){
-            /* 生成包名 */
+            /** 生成包名 */
             bw.write("package " + Constants.PACKAGE_SERVICE + ";");
             bw.newLine();
             bw.newLine();
 
-            /*引入序列化包 *//*
+            /*			*//** 引入序列化包 *//*
 			bw.write("import java.io.Serializable;");
 			bw.newLine();
 
@@ -123,8 +128,30 @@ public class BuildService {
 
             bw.flush();
         } catch (Exception e) {
-            e.printStackTrace();
             logger.info("创建 service 失败");
+        } finally {
+            if (outWriter != null) {
+                try {
+                    bw.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (outWriter != null) {
+                try {
+                    outWriter.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (out != null) {
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
         }
     }
 }

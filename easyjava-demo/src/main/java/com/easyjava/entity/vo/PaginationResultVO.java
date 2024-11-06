@@ -5,8 +5,7 @@ import java.util.List;
 
 /**
  * @Description: 分页数据
- * @Author: KunSpireUp
- * @Date: 3/26/2024 12:40 AM
+ * @Author: Siyuan
  */
 public class PaginationResultVO<T> {
 	private Integer totalCount;

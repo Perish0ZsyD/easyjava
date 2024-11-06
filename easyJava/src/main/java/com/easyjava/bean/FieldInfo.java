@@ -43,7 +43,7 @@ public class FieldInfo {
     }
 
     public void setFieldName(String fieldName) {
-        fieldName = fieldName;
+        this.fieldName = fieldName;
     }
 
     public String getPropertyName() {

@@ -32,22 +32,24 @@ public class BuildController {
         String serviceName = tableInfo.getBeanName() + "Service";
         String serviceBeanName = StringUtils.lowerCaseFirstLetter(serviceName);
         File poFile = new File(folder, className + ".java");
+        OutputStream out = null;
+        OutputStreamWriter outWriter = null;
+        BufferedWriter bw = null;
+        try {
+            out = new FileOutputStream(poFile);
+            outWriter = new OutputStreamWriter(out, "utf8");
+            bw = new BufferedWriter(outWriter);
 
-        try (OutputStream out = new FileOutputStream(poFile);
-             OutputStreamWriter outWriter = new OutputStreamWriter(out, "utf8");
-             BufferedWriter bw = new BufferedWriter(outWriter)) {
-
-
-            /* 生成包名 */
+            /** 生成包名 */
             bw.write("package " + Constants.PACKAGE_CONTROLLER + ";");
             bw.newLine();
             bw.newLine();
 
-            /* 引入序列化包 *//*
+            /** 引入序列化包 *//*
 			bw.write("import java.io.Serializable;");
 			bw.newLine();
 
-			*//* 如果存在日期类型 Date or DateTime，则导入日期类型的包 *//*
+			*//** 如果存在日期类型 Date or DateTime，则导入日期类型的包 *//*
 			if (tableInfo.getHaveDate() || tableInfo.getHaveDateTime()) {
 				bw.newLine();
 				bw.write("import " + Constants.PACKAGE_ENUMS + ".DateTimePatternEnum;");
@@ -160,6 +162,29 @@ public class BuildController {
             bw.flush();
         } catch (Exception e) {
             logger.info("创建 serviceImpl 失败");
+        } finally {
+            if (outWriter != null) {
+                try {
+                    bw.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (outWriter != null) {
+                try {
+                    outWriter.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (out != null) {
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
         }
     }
 }

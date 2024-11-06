@@ -15,72 +15,48 @@ import java.util.Map;
  * @Version 1.0
  */
 public class TableInfo {
-    /**
-     * 表名称
-     */
-    String tableName;
 
     /**
-     * bean名称
+     * 表名
      */
-    String beanName;
-
+    private String tableName;
     /**
-     * 参数名称
+     * bean 名称
      */
-    String beanParamName;
-
+    private String beanName;
+    /**
+     * bean 参数名称
+     */
+    private String beanParamName;
     /**
      * 表注释
      */
-    String comment;
-
+    private String comment;
     /**
      * 字段信息
      */
-    List<FieldInfo> fieldList;
+    private List<FieldInfo> fieldList;
 
     /**
      * 扩展字段信息
      */
     private List<FieldInfo> fieldExtendList;
-
-    public List<FieldInfo> getFieldExtendList() {
-        return fieldExtendList;
-    }
-
-    public void setFieldExtendList(List<FieldInfo> fieldExtendList) {
-        this.fieldExtendList = fieldExtendList;
-    }
-
-    public Boolean getHaveDatetime() {
-        return haveDatetime;
-    }
-
-    public void setHaveDatetime(Boolean haveDatetime) {
-        this.haveDatetime = haveDatetime;
-    }
-
     /**
      * 唯一索引集合
-     * 使用LinkedHashMap保证顺序
      */
-    Map<String, List<FieldInfo>> keyIndexMap = new LinkedHashMap<String, List<FieldInfo>>();
-
+    private Map<String, List<FieldInfo>> keyIndexMap = new LinkedHashMap();
     /**
-     * 是否有date类型
+     * 是否拥有日期 date 类型
      */
-    Boolean haveDate;
-
+    private Boolean haveDate;
     /**
-     * 是否有时间类型
+     * 是否拥有时间 time 类型
      */
-    Boolean haveDatetime;
-
+    private Boolean haveDateTime;
     /**
-     * 是否有bigDecimal类型
+     * 是否拥有 BigDecimal 类型
      */
-    Boolean haveBigDecimal;
+    private Boolean haveBigDecimal;
 
     public String getTableName() {
         return tableName;
@@ -139,11 +115,11 @@ public class TableInfo {
     }
 
     public Boolean getHaveDateTime() {
-        return haveDatetime;
+        return haveDateTime;
     }
 
-    public void setHaveDateTime(Boolean haveDatetime) {
-        this.haveDatetime = haveDatetime;
+    public void setHaveDateTime(Boolean haveDateTime) {
+        this.haveDateTime = haveDateTime;
     }
 
     public Boolean getHaveBigDecimal() {
@@ -152,5 +128,13 @@ public class TableInfo {
 
     public void setHaveBigDecimal(Boolean haveBigDecimal) {
         this.haveBigDecimal = haveBigDecimal;
+    }
+
+    public List<FieldInfo> getFieldExtendList() {
+        return fieldExtendList;
+    }
+
+    public void setFieldExtendList(List<FieldInfo> fieldExtendList) {
+        this.fieldExtendList = fieldExtendList;
     }
 }

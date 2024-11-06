@@ -26,6 +26,7 @@ import java.util.Map;
  * @Version 1.0
  */
 public class BuildMapperXml {
+
     private static final Logger logger = LoggerFactory.getLogger(BuildMapperXml.class);
 
     private static final String BASE_COLUMN_LIST = "base_column_list";
@@ -44,12 +45,14 @@ public class BuildMapperXml {
 
         String className = tableInfo.getBeanName() + Constants.SUFFIX_MAPPERS;
         File poFile = new File(folder, className + ".xml");
+        OutputStream out = null;
+        OutputStreamWriter outWriter = null;
+        BufferedWriter bw = null;
         FieldInfo idField = null;
-        try (OutputStream out = Files.newOutputStream(poFile.toPath());
-             OutputStreamWriter outWriter = new OutputStreamWriter(out, StandardCharsets.UTF_8);
-             BufferedWriter bw = new BufferedWriter(outWriter)
-             ) {
-
+        try {
+            out = new FileOutputStream(poFile);
+            outWriter = new OutputStreamWriter(out, "utf8");
+            bw = new BufferedWriter(outWriter);
 
             /***********************************************************
              * MapperXml 文件头头部
@@ -398,8 +401,30 @@ public class BuildMapperXml {
                 bw.flush();
             }
         } catch (Exception e) {
-            e.printStackTrace();
             logger.info("创建 mapper.xml 失败");
+        } finally {
+            if (outWriter != null) {
+                try {
+                    bw.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (outWriter != null) {
+                try {
+                    outWriter.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (out != null) {
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
         }
     }
 }

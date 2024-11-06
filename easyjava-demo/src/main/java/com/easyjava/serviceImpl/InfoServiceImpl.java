@@ -1,4 +1,4 @@
-package com.easyjava.service.impl;
+package com.easyjava.serviceImpl;
 
 
 import java.util.List;
@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 /**
  * @Description: 用户信息表 业务接口实现
  * @Author: false
- * @Date: 2024/11/06 22:30:38
+ * @Date: 2024/11/06 22:46:25
  */
 @Service("InfoMapper")
 public class InfoServiceImpl implements InfoService{

@@ -4,11 +4,13 @@ import com.easyjava.bean.Constants;
 import com.easyjava.bean.FieldInfo;
 import com.easyjava.bean.TableInfo;
 import com.easyjava.utils.StringUtils;
-import javafx.scene.control.Tab;
+
 import org.apache.commons.lang3.ArrayUtils;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.*;
+import java.nio.file.Files;
 
 /**
  * @ClassName BuildPO
@@ -18,7 +20,7 @@ import java.io.*;
  * @Version 1.0
  */
 public class BuildPo {
-    public static final Logger logger = org.slf4j.LoggerFactory.getLogger(BuildPo.class);
+    public static final Logger logger = LoggerFactory.getLogger(BuildPo.class);
 
     public static void execute(TableInfo tableInfo) {
         File folder = new File(Constants.PATH_PO);
@@ -26,14 +28,18 @@ public class BuildPo {
             folder.mkdirs();
         }
         File poFile = new File(folder, tableInfo.getBeanName() + ".java");
-        try (OutputStream out = new FileOutputStream(poFile);
+        try (OutputStream out = Files.newOutputStream(poFile.toPath());
              OutputStreamWriter outw = new OutputStreamWriter(out, "utf-8");
              BufferedWriter bw = new BufferedWriter(outw)) {
 
+            /* 生成包名*/
             bw.write("package " + Constants.PACKAGE_PO + ";");
             bw.newLine();
             bw.newLine();
 
+            /* 引入序列化包 */
+            bw.write("import java.io.Serializable;");
+            bw.newLine();
             /* 如果存在日期类型Date or DateTime，导入 */
             if (tableInfo.getHaveDate() || tableInfo.getHaveDateTime()) {
                 bw.newLine();
@@ -63,13 +69,11 @@ public class BuildPo {
                 bw.write("\n" + String.format(Constants.IGNORE_BEAN_TOJSON_CLASS) + "\n");
             }
 
-            /* 引入序列化包 */
-            bw.write("import java.io.Serializable;");
-            bw.newLine();
+
 
             /* 如果存在BigDecimal类型，则引入包*/
             if (tableInfo.getHaveBigDecimal()) {
-                bw.write("import java.math.BigDecimal;");
+                bw.write("\nimport java.math.BigDecimal;");
             }
 
             bw.newLine();

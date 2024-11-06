@@ -2,8 +2,7 @@ package com.easyjava.entity.vo;
 
 /**
  * @Description:
- * @Author: KunSpireUp
- * @Date: 3/27/2024 12:35 AM
+ * @Author: Siyuan
  */
 public class ResponseVO<T> {
 

@@ -3,6 +3,7 @@ package com.easyjava.utils;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Properties;
@@ -21,7 +22,7 @@ public class PropertiesUtils {
 
     static {
         try (InputStream is = PropertiesUtils.class.getClassLoader().getResourceAsStream("application.properties")){
-            props.load(new InputStreamReader(is,"utf-8") {
+            props.load(new InputStreamReader(is, StandardCharsets.UTF_8) {
                 @Override
                 public int read() throws IOException {
                     return 0;

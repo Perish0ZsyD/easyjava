@@ -154,11 +154,28 @@ public class BuildTable {
                     fieldExtendList.add(fuzzyField);
                 }
 
+                /* 日期类型的参数起止 */
+                if (ArrayUtils.contains(Constants.SQL_DATE_TYPES, type) || ArrayUtils.contains(Constants.SQL_DATE_TIME_TYPES, type)) {
+                    FieldInfo timeStartField = new FieldInfo();
+                    timeStartField.setJavaType("String");
+                    timeStartField.setPropertyName(propertyName + Constants.SUFFIX_BEAN_QUERY_TIME_START);
+                    timeStartField.setFieldName(fieldInfo.getFieldName());
+                    timeStartField.setSqlType(type);
+                    fieldExtendList.add(timeStartField);
+
+                    FieldInfo timeEndField = new FieldInfo();
+                    timeEndField.setJavaType("String");
+                    timeEndField.setPropertyName(propertyName + Constants.SUFFIX_BEAN_QUERY_TIME_END);
+                    timeEndField.setFieldName(fieldInfo.getFieldName());
+                    timeEndField.setSqlType(type);
+                    fieldExtendList.add(timeEndField);
+                }
 
             }
             tableInfo.setHaveDateTime(haveDateTime);
             tableInfo.setHaveDate(haveDate);
             tableInfo.setHaveBigDecimal(haveBigDecimal);
+
             tableInfo.setFieldList(fieldInfoList);
             tableInfo.setFieldExtendList(fieldExtendList);
         } catch (Exception e) {
@@ -167,9 +184,7 @@ public class BuildTable {
         return fieldInfoList;
     }
 
-    private static List<FieldInfo> getKeyIndexInfo(TableInfo tableInfo) {
-
-        List<FieldInfo> fieldInfoList = new ArrayList<>();
+    private static void getKeyIndexInfo(TableInfo tableInfo) {
         // 定义一个临时的缓存Map
         Map<String, FieldInfo> tempMap = new HashMap<>();
 
@@ -204,7 +219,6 @@ public class BuildTable {
         } catch (Exception e) {
             logger.error("获取索引失败", e);
         }
-        return fieldInfoList;
     }
 
     private static String processField(String field, Boolean upperCaseFirstLetter) {
@@ -222,14 +236,14 @@ public class BuildTable {
             return "Integer";
         } else if (ArrayUtils.contains(Constants.SQL_LONG_TYPES, type)) {
             return "Long";
+        } else if (ArrayUtils.contains(Constants.SQL_STRING_TYPES, type)) {
+            return "String";
         } else if (ArrayUtils.contains(Constants.SQL_DATE_TYPES, type) || ArrayUtils.contains(Constants.SQL_DATE_TIME_TYPES, type)) {
             return "Date";
         } else if (ArrayUtils.contains(Constants.SQL_DECIMAL_TYPES, type)) {
             return "BigDecimal";
-        } else if (ArrayUtils.contains(Constants.SQL_STRING_TYPES, type)) {
-            return "String";
         } else {
-            throw new RuntimeException("未知类型：" + type);
+            throw new RuntimeException("无法识别的类型" + type);
         }
     }
 }

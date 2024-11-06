@@ -19,6 +19,7 @@ import java.util.Map;
  * @Version 1.0
  */
 public class BuildServiceImpl {
+
     private static final Logger logger = LoggerFactory.getLogger(BuildService.class);
 
     public static void execute(TableInfo tableInfo) {
@@ -32,10 +33,13 @@ public class BuildServiceImpl {
         String mapperName = tableInfo.getBeanName() + Constants.SUFFIX_MAPPERS;
         String mappserBeanName = StringUtils.lowerCaseFirstLetter(mapperName);
         File poFile = new File(folder, className + ".java");
-
-        try (OutputStream out = new FileOutputStream(poFile);
-             OutputStreamWriter outWriter = new OutputStreamWriter(out, "utf8");
-             BufferedWriter bw = new BufferedWriter(outWriter)) {
+        OutputStream out = null;
+        OutputStreamWriter outWriter = null;
+        BufferedWriter bw = null;
+        try {
+            out = new FileOutputStream(poFile);
+            outWriter = new OutputStreamWriter(out, "utf8");
+            bw = new BufferedWriter(outWriter);
 
             /** 生成包名 */
             bw.write("package " + Constants.PACKAGE_SERVICE_IMPL + ";");
@@ -178,8 +182,30 @@ public class BuildServiceImpl {
 
             bw.flush();
         } catch (Exception e) {
-            e.printStackTrace();
             logger.info("创建 serviceImpl 失败");
+        } finally {
+            if (outWriter != null) {
+                try {
+                    bw.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (outWriter != null) {
+                try {
+                    outWriter.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (out != null) {
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
         }
     }
 }

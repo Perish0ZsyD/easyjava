@@ -8,7 +8,7 @@ import com.easyjava.entity.query.InfoQuery;
 /**
  * @Description: 用户信息表 Service
  * @Author: false
- * @Date: 2024/11/06 18:47:59
+ * @Date: 2024/11/06 22:46:25
  */
 public interface InfoService{
 

@@ -4,8 +4,7 @@ import com.easyjava.enums.ResponseCodeEnum;;
 
 /**
  * @Description: 业务异常
- * @Author: KunSpireUp
- * @Date: 3/26/2024 11:25 PM
+ * @Author: Siyuan
  */
 public class BusinessException extends RuntimeException {
 

@@ -5,7 +5,7 @@ package com.easyjava.entity.query;
 /**
  * @Description: 靓号表
  * @Author: false
- * @Date: 2024/11/06 18:47:59
+ * @Date: 2024/11/06 22:46:25
  */
 public class InfoBeautyQuery extends BaseQuery {
 	/**

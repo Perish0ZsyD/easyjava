@@ -6,8 +6,7 @@ import com.easyjava.enums.ResponseCodeEnum;;
 
 /**
  * @Description: 信息返回状态
- * @Author: KunSpireUp
- * @Date: 3/27/2024 12:24 AM
+ * @Author: Siyuan
  */
 public class ABaseController {
 

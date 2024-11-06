@@ -2,8 +2,7 @@ package com.easyjava.enums;
 
 /**
  * @Description: 响应参数
- * @Author: KunSpireUp
- * @Date: 3/27/2024 12:00 AM
+ * @Author: Siyuan
  */
 public enum ResponseCodeEnum {
 

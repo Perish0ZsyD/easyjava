@@ -2,7 +2,7 @@ package com.easyjava.enums;
 
 /**
  * @Description: 时间枚举类
- * @Author: KunSpireUp
+ * @Author: Siyuan
  */
 
 public enum DateTimePatternEnum {

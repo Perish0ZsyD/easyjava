@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
+
 import java.util.List;
 import java.util.Map;
 
@@ -19,6 +20,7 @@ import java.util.Map;
  * @Version 1.0
  */
 public class BuildMapper {
+
     private static final Logger logger = LoggerFactory.getLogger(BuildPo.class);
 
     public static void execute(TableInfo tableInfo) {
@@ -29,11 +31,15 @@ public class BuildMapper {
 
         String className = tableInfo.getBeanName() + Constants.SUFFIX_MAPPERS;
         File poFile = new File(folder, className + ".java");
+        OutputStream out = null;
+        OutputStreamWriter outWriter = null;
+        BufferedWriter bw = null;
+        try {
+            out = new FileOutputStream(poFile);
+            outWriter = new OutputStreamWriter(out, "utf8");
+            bw = new BufferedWriter(outWriter);
 
-        try (OutputStream out = new FileOutputStream(poFile);
-             OutputStreamWriter outWriter = new OutputStreamWriter(out, "utf8");
-             BufferedWriter bw = new BufferedWriter(outWriter)){
-            /* 生成包名 */
+            /** 生成包名 */
             bw.write("package " + Constants.PACKAGE_MAPPERS + ";");
             bw.newLine();
             bw.newLine();
@@ -42,7 +48,7 @@ public class BuildMapper {
             bw.newLine();
             bw.newLine();
 
-            /* 生成类顶部的注解【描述、作者、功能】 */
+            /** 生成类顶部的注解【描述、作者、功能】 */
             BuildComment.createClassComment(bw, tableInfo.getComment() + " Mapper");
 
             bw.write("public interface " + className + "<T, P> extends BaseMapper {");
@@ -90,8 +96,30 @@ public class BuildMapper {
             bw.write("}");
             bw.flush();
         } catch (Exception e) {
-            e.printStackTrace();
             logger.info("创建 mappers 失败");
+        } finally {
+            if (outWriter != null) {
+                try {
+                    bw.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (outWriter != null) {
+                try {
+                    outWriter.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (out != null) {
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
         }
     }
 }

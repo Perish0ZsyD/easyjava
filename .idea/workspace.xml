@@ -5,53 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20af261a-d127-414d-98b7-202cd5b0be2b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildMapperXml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildPo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/utils/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/resources/template/ABaseController.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/resources/template/AGlobalExceptionHandlerController.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/resources/template/BaseMapper.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/resources/template/BaseQuery.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/resources/template/BusinessException.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/resources/template/DateTimePatternEnum.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/resources/template/DateUtils.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/resources/template/PageSize.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/resources/template/PaginationResultVO.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/resources/template/ResponseCodeEnum.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/resources/template/ResponseVO.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyJava/src/main/resources/template/SimplePage.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/RunApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/RunApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/bean/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/bean/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/bean/FieldInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/bean/FieldInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/bean/TableInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/bean/TableInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildController.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildMapperXml.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildMapperXml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildPo.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildPo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildService.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/utils/PropertiesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/utils/PropertiesUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/utils/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/utils/StringUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/RunApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/RunApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/bean/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/bean/Constants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/bean/FieldInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/bean/FieldInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/bean/TableInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/bean/TableInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildController.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildMapperXml.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildMapperXml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildPo.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildPo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildService.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/utils/PropertiesUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/utils/PropertiesUtils$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/utils/PropertiesUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/utils/PropertiesUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/utils/StringUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/utils/StringUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/utils/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/utils/RunDemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/controller/ABaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/controller/ABaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/controller/AGlobalExceptionHandlerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/controller/AGlobalExceptionHandlerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/controller/InfoBeautyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/controller/InfoBeautyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/controller/InfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/controller/InfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/po/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/po/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/po/InfoBeauty.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/po/InfoBeauty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/query/BaseQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/query/BaseQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/query/InfoBeautyQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/query/InfoBeautyQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/query/InfoQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/query/InfoQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/query/SimplePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/query/SimplePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/vo/PaginationResultVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/vo/PaginationResultVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/vo/ResponseVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/vo/ResponseVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/enums/DateTimePatternEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/enums/DateTimePatternEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/enums/PageSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/enums/PageSize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/enums/ResponseCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/enums/ResponseCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/exception/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/mappers/InfoBeautyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/mappers/InfoBeautyMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/mappers/InfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/mappers/InfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/service/InfoBeautyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/service/InfoBeautyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/service/InfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/service/InfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/service/impl/InfoBeautyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/service/impl/InfoBeautyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/service/impl/InfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/service/impl/InfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/utils/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/utils/DateUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +234,7 @@
       <updated>1730726430932</updated>
       <workItem from="1730726432033" duration="2194000" />
       <workItem from="1730728638584" duration="3616000" />
-      <workItem from="1730856164684" duration="30352000" />
+      <workItem from="1730856164684" duration="34419000" />
     </task>
     <servers />
   </component>

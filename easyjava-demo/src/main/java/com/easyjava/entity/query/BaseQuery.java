@@ -2,8 +2,7 @@ package com.easyjava.entity.query;
 
 /**
  * @Description: 分页参数
- * @Author: KunSpireUp
- * @Date: 16/03/2024 22:28
+ * @Author: Siyuan
  */
 public class BaseQuery {
 

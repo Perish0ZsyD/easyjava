@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 /**
  * @Description: 靓号表 业务接口实现
  * @Author: false
- * @Date: 2024/11/06 22:46:25
+ * @Date: 2024/11/08 14:52:20
  */
 @Service("InfoBeautyMapper")
 public class InfoBeautyServiceImpl implements InfoBeautyService{

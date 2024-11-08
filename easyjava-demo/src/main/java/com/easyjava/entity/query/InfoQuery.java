@@ -6,7 +6,7 @@ import java.util.Date;
 /**
  * @Description: 用户信息表
  * @Author: false
- * @Date: 2024/11/06 22:46:25
+ * @Date: 2024/11/08 14:52:20
  */
 public class InfoQuery extends BaseQuery {
 	/**

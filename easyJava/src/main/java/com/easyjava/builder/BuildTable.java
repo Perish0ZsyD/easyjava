@@ -60,11 +60,11 @@ public class BuildTable {
                 String tableComment = tableResult.getString("comment");
 
                 String beanName = tableName;
-                if (Constants.IGNORE_TABLE_PREFIX) {
-                    beanName = tableName.substring(beanName.indexOf("_") + 1);
-                }
+//                if (Constants.IGNORE_TABLE_PREFIX) { // 去除user前缀，视情况
+//                    beanName = tableName.substring(beanName.indexOf("_"));
+//                }
                 beanName = processField(beanName, true); // beanName:Info beanName:InfoBeauty
-
+//                System.out.println("tableName:" + tableName + " tableComment:" + tableComment + " beanName:" + beanName);
                 TableInfo tableInfo = new TableInfo();
                 tableInfo.setTableName(tableName);
                 tableInfo.setBeanName(beanName);

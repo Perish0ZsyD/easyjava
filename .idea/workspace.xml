@@ -6,36 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="20af261a-d127-414d-98b7-202cd5b0be2b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyjava/builder/BuildTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyjava/builder/BuildTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/controller/ABaseController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/controller/AGlobalExceptionHandlerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/controller/InfoBeautyController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/controller/InfoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/po/Info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/po/InfoBeauty.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/query/BaseQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/query/InfoBeautyQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/query/InfoQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/query/SimplePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/vo/PaginationResultVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/entity/vo/ResponseVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/enums/DateTimePatternEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/enums/PageSize.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/enums/ResponseCodeEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/exception/BusinessException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/mappers/BaseMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/mappers/InfoBeautyMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/mappers/InfoMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/service/InfoBeautyService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/service/InfoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/serviceImpl/InfoBeautyServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/serviceImpl/InfoServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/java/com/easyjava/utils/DateUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/resources/com/easyjava/mappers/InfoBeautyMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyjava-demo/src/main/resources/com/easyjava/mappers/InfoMapper.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +61,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.Constants.executor": "Run",
     "Application.PropertiesUtils.executor": "Run",
-    "Application.RunApplication.executor": "Debug",
+    "Application.RunApplication.executor": "Run",
     "Application.StringUtils.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -100,7 +71,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.RunDemoApplication.executor": "Debug",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/ForLife/Coding/workspace",
+    "last_opened_file_path": "C:/ForLife/Coding/workspace-easyjava",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -220,6 +191,7 @@
       <workItem from="1731048558551" duration="367000" />
       <workItem from="1731049045184" duration="1251000" />
       <workItem from="1731063695651" duration="192000" />
+      <workItem from="1731596753886" duration="100000" />
     </task>
     <servers />
   </component>
